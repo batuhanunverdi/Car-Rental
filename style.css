@@ -1,0 +1,15 @@
+.banner-image {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+  }
+.card{
+    background-color: rgba(245, 245, 245, 0.4) !important;
+}
+.input-group-append {
+    cursor: pointer;
+  }
+.input-group-date{
+    width: 250px;
+}
+
+
