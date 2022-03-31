@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
 .banner-image {
     background-image: url('images/background.jpg');
     background-size: cover;
   }
 body{
   overflow-x: hidden;
+}
+a{
+  text-decoration: none;
 }
 .card{
     background-color: rgba(245, 245, 245, 0.4) !important;
@@ -48,4 +52,23 @@ body{
 .w-100 {
   width: 100% !important;
   height: 103vh;
+}
+#myh1{
+  font-family: 'Teko', sans-serif;
+    font-size: 80px;
+    text-shadow: 6px 0px 4px rgb(0 0 0 / 30%);
+    font-weight: 900 !important;
+    color: whitesmoke;
+}
+@media screen and (max-width: 768px) {
+  h1{
+      font-size:60px !important;
+  }
+}
+
+#aboutcard{
+  background-color: whitesmoke !important;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  top:30%;
 }

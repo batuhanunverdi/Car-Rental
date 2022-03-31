@@ -55,40 +55,53 @@
 
     <!-- Banner -->
     <div class="banner w-100 vh-100 d-flex justify-content-center align-items-center">
-        <div class="container-fluid">
+        <div class="card" style="width: 75%;">
+            <div class="card-body">
                 <div class="row">
-                    <h2 class="text-center mb-4" >About Us</h2>
-                    <p class="h6 text-center">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum in ea distinctio doloremque
-                        quae voluptatibus consectetur officia incidunt facilis eos dolores labore minima assumenda
-                        corrupti molestiae minus, culpa nobis blanditiis. Labore consectetur excepturi ea, facere
-                        fuga nobis aperiam fugiat consequatur sapiente dolore, esse eveniet veritatis quod quaerat
-                        officiis? Laudantium veniam rem facilis culpa maiores aut eaque tempora debitis iste
-                        expedita, alias esse saepe inventore eius quo, harum tempore? Velit asperiores dolorem
-                        temporibus officiis odio, dicta esse labore aliquam recusandae quae libero mollitia quis
-                        sequi rem perspiciatis, eos modi illum incidunt eum error fuga eaque reprehenderit expedita
-                        ipsam? Vero, autem numquam!
-                    </p>
-                    <img src="images/about1.png">
+                    <div class="col-md-7">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12763.300174947375!2d30.655353!3d36.8945335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfbd4e14587332eeb!2sAkdeniz%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1648630104013!5m2!1str!2str"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-md-5">
+                        <form method="post" class="form-group" action="index.html">
+                            <div class="form-grop">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                    name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="context">What About ?</label>
+                                <textarea class="form-control" id="textArea1" rows="4"></textarea>
+                                <br>
+                            </div>
+                            <div class="form-group"></div>
+                            <button type="submit" onclick="alert('Your Message has sent');"
+                                class="btn btn-warning">Send</button>
+                            <div class="text-dark">
+                                <div class="col-md-8">
+                                    <i class="bi bi-facebook" style="color:black;"></i> <a style=color:black; href="#" >MBU Rental Facebook</a>
+                                </div>
+                                <div class="col-md-8">
+                                    <i class="bi bi-twitter" style="color:black;"></i> <a style=color:black; href="#" >MBU Rental Twitter</a>
+                                </div>
+                                <div class="col-md-8">
+                                    <i class="bi bi-github" style="color:black;"></i> <a style=color:black; href="#" >MBU Rental Github</a>
+                                </div>
+                                <div class="col-md-8">
+                                    <i class="bi bi-telephone-fill" style="color:black;"></i> <a style=color:black; href="#" >MBU Rental</a>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
                 </div>
             </div>
         </div>
-    <div class="container-fluid bg-warning">
-        <div class="row justify-content-center">
-            <div class="col-lg-2">
-                <h2 class="text-center">Lorem, ipsum dolor</h2>
-                <hr>
-                <p class="h6 text-center">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora libero reprehenderit eligendi vero
-                    pariatur obcaecati corporis ut, quisquam possimus vitae?
-                </p>
-            </div>
-            <div class="col-6"></div>
-            <div class="col-lg-2">
-                <img src="images/about2.png" style=height:250px;width:300px;>
-            </div>
-        </div>
     </div>
+
     <!--Banner End-->
     <!-- Modal -->
     <!-- Login / Register Modal-->
@@ -97,7 +110,8 @@
             <div class="modal-content">
                 <div class="modal-header" style="height: 50px;">
                     <ul class="nav nav-tabs mx-auto">
-                        <li class="active"><button class="btn btn-outline-warning active" data-toggle="tab" href="#login-form">
+                        <li class="active"><button class="btn btn-outline-warning active" data-toggle="tab"
+                                href="#login-form">
                                 Login <span class="glyphicon glyphicon-user"></span></button></li>
                         &nbsp;
                         <li><button class="btn btn-outline-warning" data-toggle="tab" href="#registration-form">
