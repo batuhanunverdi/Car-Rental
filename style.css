@@ -55,14 +55,13 @@ a{
 }
 #myh1{
   font-family: 'Teko', sans-serif;
-    font-size: 80px;
     text-shadow: 6px 0px 4px rgb(0 0 0 / 30%);
     font-weight: 900 !important;
     color: whitesmoke;
 }
 @media screen and (max-width: 768px) {
   h1{
-      font-size:60px !important;
+      font-size:6vw !important;
   }
 }
 
@@ -71,4 +70,5 @@ a{
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   top:30%;
+  margin-bottom: 75px;
 }
