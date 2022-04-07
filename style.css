@@ -87,9 +87,15 @@ a{
   .card-title{
       font-size:3vw !important;
   }
+
 }
 
 .bookingcars{
   width: 175px;
   height: 120px;
 }
+.table-image td, th
+   {
+    vertical-align: middle;
+  }
+
