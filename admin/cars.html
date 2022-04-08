@@ -53,7 +53,6 @@
   <div class="content-container">
 
     <div class="container-fluid">
-
       <div class="jumbotron">
         <div class="row">
           <div class="col-md mt-5 mb-5">
@@ -65,29 +64,37 @@
                   <th scope="col">Price</th>
                   <th scope="col">Car Features</th>
                   <th scope="col">Car Features</th>
+                  <th scope="col">Edit</th>
+                  <th scope="col">Delete</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Car Name</td>
-                  <td>Antalya</td>
-                  <td>100.00 TL Per/Day</td>
-                  <td>Car Features</td>
-                  <td>Car Features</td>
+                  <td scope="col">Car Name</td>
+                  <td scope="col">Antalya</td>
+                  <td scope="col">100.00 TL Per/Day</td>
+                  <td scope="col">Car Features</td>
+                  <td scope="col">Car Features</td>
+                  <td scope="col"><button class="btn btn-warning" data-toggle="modal" data-target="#editModal">Edit</button></td>
+                  <td scope="col"><button class="btn btn-warning">Delete</button></td>
                 </tr>
                 <tr>
-                  <td>Car Name</td>
-                  <td>Antalya</td>
-                  <td>100.00 TL Per/Day</td>
-                  <td>Car Feature</td>
-                  <td>Car Features</td>
+                  <td scope="col">Car Name</td>
+                  <td scope="col">Antalya</td>
+                  <td scope="col">100.00 TL Per/Day</td>
+                  <td scope="col">Car Features</td>
+                  <td scope="col">Car Features</td>
+                  <td scope="col"><button class="btn btn-warning"  data-toggle="modal" data-target="#editModal"">Edit</button></td>
+                  <td scope="col"><button class="btn btn-warning">Delete</button></td>
                 </tr>
                 <tr>
-                  <td>Car Name</td>
-                  <td>Antalya</td>
-                  <td>100.00 TL Per/Day</td>
-                  <td>Car Features</td>
-                  <td>Car Features</td>
+                  <td scope="col">Car Name</td>
+                  <td scope="col">Antalya</td>
+                  <td scope="col">100.00 TL Per/Day</td>
+                  <td scope="col">Car Features</td>
+                  <td scope="col">Car Features</td>
+                  <td scope="col"><button class="btn btn-warning" data-toggle="modal" data-target="#editModal">Edit</button></td>
+                  <td scope="col"><button class="btn btn-warning">Delete</button></td>
                 </tr>
               </tbody>
             </table>
@@ -95,45 +102,98 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="modal fade login-register-form pe-4" id="userForm" role="dialog">
-    <div class="modal-dialog modal-sm">
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header" style="height: 50px;">
-                <ul class="nav nav-tabs mx-auto">
-                    <li class="active"><button class="btn btn-outline-warning active" data-toggle="tab"
-                            href="#login-form">
-                            Login <span class="glyphicon glyphicon-user"></span></button></li>
-                    &nbsp;
-                    <li><button class="btn btn-outline-warning" data-toggle="tab" href="#registration-form">
-                            Register <span class="glyphicon glyphicon-pencil"></span></a></button></li>
-                </ul>
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Edit</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="get" action="dashboard.html">
+              <div class="form-floating mb-3">
+                  <input type="carname" class="form-control" id="carName"
+                      placeholder="Car Name">
+                  <label for="carName">Car Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="location" class="form-control" id="location"
+                    placeholder="location">
+                <label for="location">Location</label>
             </div>
-            <div class="modal-body">
-                <div class="tab-content">
-                    <div id="login-form" class="tab-pane fade in show active">
-                        <form method="get" action="cars.html">
-                            <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter email"
-                                    name="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="pwd">Password:</label>
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter password"
-                                    name="pwd">
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" name="remember"> Remember me</label>
-                            </div>
-                            <button type="submit" class="btn btn-warning">Login</button>
-                        </form>
-                    </div>
-                    
-                    </div>
-                </div>
-            </div>
+            <div class="form-floating mb-3">
+              <input type="price" class="form-control" id="price"
+                  placeholder="Car Name">
+              <label for="price">Price</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="cf1" class="form-control" id="cf1"
+                placeholder="Car Feature">
+            <label for="cf1">Car Feature</label>
         </div>
+        <div class="form-floating mb-3">
+          <input type="cf2" class="form-control" id="cf2"
+              placeholder="Car Feature">
+          <label for="cf2">Car Feature</label>
+      </div>
+              <div class="d-grid">
+                  <button class="btn btn-warning btn-login text-uppercase fw-bold" type="submit">Edit</button>
+              </div>
+          </form>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="text-center" >
+      <button class="btn btn-warning btn-login text-uppercase fw-bold"  data-toggle="modal" data-target="#addModal" type="submit">Add</button>
+    </div>
+    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Add</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="get" action="dashboard.html">
+              <div class="form-floating mb-3">
+                  <input type="carname" class="form-control" id="carName"
+                      placeholder="Car Name">
+                  <label for="carName">Car Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="location" class="form-control" id="location"
+                    placeholder="location">
+                <label for="location">Location</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="price" class="form-control" id="price"
+                  placeholder="Car Name">
+              <label for="price">Price</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="cf1" class="form-control" id="cf1"
+                placeholder="Car Feature">
+            <label for="cf1">Car Feature</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="cf2" class="form-control" id="cf2"
+              placeholder="Car Feature">
+          <label for="cf2">Car Feature</label>
+      </div>
+              <div class="d-grid">
+                  <button class="btn btn-warning btn-login text-uppercase fw-bold" type="submit">Add</button>
+              </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>
