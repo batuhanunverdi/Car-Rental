@@ -55,6 +55,10 @@
     <div class="container-fluid">
       <div class="jumbotron">
         <div class="row">
+          <div class="text-center">
+            <button class="btn btn-warning btn-login text-uppercase fw-bold" data-toggle="modal" data-target="#addModal"
+              type="submit">Add</button>
+          </div>
           <div class="col-md mt-5 mb-5">
             <table class="table table-image table-striped">
               <thead>
@@ -75,7 +79,8 @@
                   <td scope="col">100.00 TL Per/Day</td>
                   <td scope="col">Car Features</td>
                   <td scope="col">Car Features</td>
-                  <td scope="col"><button class="btn btn-warning" data-toggle="modal" data-target="#editModal">Edit</button></td>
+                  <td scope="col"><button class="btn btn-warning" data-toggle="modal"
+                      data-target="#editModal">Edit</button></td>
                   <td scope="col"><button class="btn btn-warning">Delete</button></td>
                 </tr>
                 <tr>
@@ -84,8 +89,8 @@
                   <td scope="col">100.00 TL Per/Day</td>
                   <td scope="col">Car Features</td>
                   <td scope="col">Car Features</td>
-                  <td scope="col"><button class="btn btn-warning"  data-toggle="modal" data-target="#editModal"">Edit</button></td>
-                  <td scope="col"><button class="btn btn-warning">Delete</button></td>
+                  <td scope="col"><button class="btn btn-warning" data-toggle="modal" data-target="#editModal"">Edit</button></td>
+                  <td scope=" col"><button class="btn btn-warning">Delete</button></td>
                 </tr>
                 <tr>
                   <td scope="col">Car Name</td>
@@ -93,7 +98,8 @@
                   <td scope="col">100.00 TL Per/Day</td>
                   <td scope="col">Car Features</td>
                   <td scope="col">Car Features</td>
-                  <td scope="col"><button class="btn btn-warning" data-toggle="modal" data-target="#editModal">Edit</button></td>
+                  <td scope="col"><button class="btn btn-warning" data-toggle="modal"
+                      data-target="#editModal">Edit</button></td>
                   <td scope="col"><button class="btn btn-warning">Delete</button></td>
                 </tr>
               </tbody>
@@ -102,7 +108,8 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -114,42 +121,36 @@
           <div class="modal-body">
             <form method="get" action="dashboard.html">
               <div class="form-floating mb-3">
-                  <input type="carname" class="form-control" id="carName"
-                      placeholder="Car Name">
-                  <label for="carName">Car Name</label>
+                <input type="carname" class="form-control" id="carName" placeholder="Car Name">
+                <label for="carName">Car Name</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="location" class="form-control" id="location"
-                    placeholder="location">
+                <input type="location" class="form-control" id="location" placeholder="location">
                 <label for="location">Location</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="price" class="form-control" id="price"
-                  placeholder="Car Name">
-              <label for="price">Price</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="cf1" class="form-control" id="cf1"
-                placeholder="Car Feature">
-            <label for="cf1">Car Feature</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input type="cf2" class="form-control" id="cf2"
-              placeholder="Car Feature">
-          <label for="cf2">Car Feature</label>
-      </div>
-              <div class="d-grid">
-                  <button class="btn btn-warning btn-login text-uppercase fw-bold" type="submit">Edit</button>
               </div>
-          </form>
+              <div class="form-floating mb-3">
+                <input type="price" class="form-control" id="price" placeholder="Car Name">
+                <label for="price">Price</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="cf1" class="form-control" id="cf1" placeholder="Car Feature">
+                <label for="cf1">Car Feature</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="cf2" class="form-control" id="cf2" placeholder="Car Feature">
+                <label for="cf2">Car Feature</label>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-warning btn-login text-uppercase fw-bold" type="submit">Edit</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <div class="text-center" >
-      <button class="btn btn-warning btn-login text-uppercase fw-bold"  data-toggle="modal" data-target="#addModal" type="submit">Add</button>
-    </div>
-    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+
+    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -161,39 +162,35 @@
           <div class="modal-body">
             <form method="get" action="dashboard.html">
               <div class="form-floating mb-3">
-                  <input type="carname" class="form-control" id="carName"
-                      placeholder="Car Name">
-                  <label for="carName">Car Name</label>
+                <input type="carname" class="form-control" id="carName" placeholder="Car Name">
+                <label for="carName">Car Name</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="location" class="form-control" id="location"
-                    placeholder="location">
+                <input type="location" class="form-control" id="location" placeholder="location">
                 <label for="location">Location</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="price" class="form-control" id="price"
-                  placeholder="Car Name">
-              <label for="price">Price</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="cf1" class="form-control" id="cf1"
-                placeholder="Car Feature">
-            <label for="cf1">Car Feature</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input type="cf2" class="form-control" id="cf2"
-              placeholder="Car Feature">
-          <label for="cf2">Car Feature</label>
-      </div>
-              <div class="d-grid">
-                  <button class="btn btn-warning btn-login text-uppercase fw-bold" type="submit">Add</button>
               </div>
-          </form>
+              <div class="form-floating mb-3">
+                <input type="price" class="form-control" id="price" placeholder="Car Name">
+                <label for="price">Price</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="cf1" class="form-control" id="cf1" placeholder="Car Feature">
+                <label for="cf1">Car Feature</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="cf2" class="form-control" id="cf2" placeholder="Car Feature">
+                <label for="cf2">Car Feature</label>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-warning btn-login text-uppercase fw-bold" type="submit">Add</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+
 </body>
+
 </html>
