@@ -66,8 +66,8 @@
                   <th scope="col">Car Name</th>
                   <th scope="col">Location</th>
                   <th scope="col">Price</th>
-                  <th scope="col">Car Features</th>
-                  <th scope="col">Car Features</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Engine</th>
                   <th scope="col">Edit</th>
                   <th scope="col">Delete</th>
                 </tr>
@@ -77,8 +77,8 @@
                   <td scope="col">Car Name</td>
                   <td scope="col">Antalya</td>
                   <td scope="col">100.00 TL Per/Day</td>
-                  <td scope="col">Car Features</td>
-                  <td scope="col">Car Features</td>
+                  <td scope="col">Hatchback</td>
+                  <td scope="col">Diesel</td>
                   <td scope="col"><button class="btn btn-warning" data-toggle="modal"
                       data-target="#editModal">Edit</button></td>
                   <td scope="col"><button class="btn btn-warning">Delete</button></td>
@@ -87,8 +87,8 @@
                   <td scope="col">Car Name</td>
                   <td scope="col">Antalya</td>
                   <td scope="col">100.00 TL Per/Day</td>
-                  <td scope="col">Car Features</td>
-                  <td scope="col">Car Features</td>
+                  <td scope="col">SUV</td>
+                  <td scope="col">Gasoline</td>
                   <td scope="col"><button class="btn btn-warning" data-toggle="modal" data-target="#editModal"">Edit</button></td>
                   <td scope=" col"><button class="btn btn-warning">Delete</button></td>
                 </tr>
@@ -96,8 +96,8 @@
                   <td scope="col">Car Name</td>
                   <td scope="col">Antalya</td>
                   <td scope="col">100.00 TL Per/Day</td>
-                  <td scope="col">Car Features</td>
-                  <td scope="col">Car Features</td>
+                  <td scope="col">Sedan</td>
+                  <td scope="col">Electric</td>
                   <td scope="col"><button class="btn btn-warning" data-toggle="modal"
                       data-target="#editModal">Edit</button></td>
                   <td scope="col"><button class="btn btn-warning">Delete</button></td>
@@ -121,24 +121,29 @@
           <div class="modal-body">
             <form method="get" action="dashboard.html">
               <div class="form-floating mb-3">
-                <input type="carname" class="form-control" id="carName" placeholder="Car Name">
+                <input type="text" class="form-control" id="carName" placeholder="Car Name">
                 <label for="carName">Car Name</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="location" class="form-control" id="location" placeholder="location">
+                <input type="text" class="form-control" id="location" placeholder="location">
                 <label for="location">Location</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="price" class="form-control" id="price" placeholder="Car Name">
+                <input type="text" class="form-control" id="price" placeholder="Car Name">
                 <label for="price">Price</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="cf1" class="form-control" id="cf1" placeholder="Car Feature">
-                <label for="cf1">Car Feature</label>
+                <div class="input-group file" id="carphoto">
+                  <input type="file" class="form-control" id="carphoto" placeholder="Car Photo">
+                </div>
               </div>
               <div class="form-floating mb-3">
-                <input type="cf2" class="form-control" id="cf2" placeholder="Car Feature">
-                <label for="cf2">Car Feature</label>
+                <input type="text" class="form-control" id="type" placeholder="Car Type">
+                <label for="cf2">Car Type</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="engine" placeholder="Car Engine">
+                <label for="cf3">Car Engine</label>
               </div>
               <div class="d-grid">
                 <button class="btn btn-warning btn-login text-uppercase fw-bold" type="submit">Edit</button>
@@ -162,24 +167,29 @@
           <div class="modal-body">
             <form method="get" action="dashboard.html">
               <div class="form-floating mb-3">
-                <input type="carname" class="form-control" id="carName" placeholder="Car Name">
+                <input type="text" class="form-control" id="carName" placeholder="Car Name">
                 <label for="carName">Car Name</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="location" class="form-control" id="location" placeholder="location">
+                <input type="text" class="form-control" id="location" placeholder="location">
                 <label for="location">Location</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="price" class="form-control" id="price" placeholder="Car Name">
+                <input type="text" class="form-control" id="price" placeholder="Car Name">
                 <label for="price">Price</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="cf1" class="form-control" id="cf1" placeholder="Car Feature">
-                <label for="cf1">Car Feature</label>
+                <div class="input-group file" id="carphoto">
+                  <input type="file" class="form-control" id="carphoto" placeholder="Car Photo">
+                </div>
               </div>
               <div class="form-floating mb-3">
-                <input type="cf2" class="form-control" id="cf2" placeholder="Car Feature">
-                <label for="cf2">Car Feature</label>
+                <input type="text" class="form-control" id="type" placeholder="Car Type">
+                <label for="cf2">Car Type</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="engine" placeholder="Car Engine">
+                <label for="cf3">Car Engine</label>
               </div>
               <div class="d-grid">
                 <button class="btn btn-warning btn-login text-uppercase fw-bold" type="submit">Add</button>
